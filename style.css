@@ -14,12 +14,13 @@ body {
     --orange-light: #FD6F00;
     --orange-dark: #E46400;
     --red: #E60026;
+    --orange-black: #984300;
+    --orange-lighter: #CA5900;
     --black: #121212;
     --white: #fff;
     --gray: #959595;
     --gray-dark: #707070;
-    --orange-black: #984300;
-    --orange-lighter: #CA5900;
+
     --gray-darker: #575757;
 }
 
@@ -160,6 +161,7 @@ body {
     font-weight: 900;
     line-height: 60px;
     margin-top: 24px;
+    letter-spacing: 2px;
     background: linear-gradient(90deg, var(--orange-black), var(--orange-light), var(--orange-lighter));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
