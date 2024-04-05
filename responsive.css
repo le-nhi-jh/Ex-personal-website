@@ -1,0 +1,621 @@
+:root {
+    --orange-light: #FD6F00;
+    --orange-dark: #E46400;
+    --red: #E60026;
+    --black: #121212;
+    --white: #fff;
+    --gray: #959595;
+    --gray-dark: #707070;
+    --orange-black: #984300;
+    --orange-lighter: #CA5900;
+    --gray-darker: #575757;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .info-job {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .banner-right {
+        zoom: 1.3;
+    }
+
+    .banner-left {
+        zoom: 1.3;
+    }
+
+    .services {
+        padding: 0 50px;
+    }
+
+    .about-me {
+        padding: 0 50px;
+    }
+
+    .tool-card {
+        zoom: 1.5;
+    }
+
+    .portfolio {
+        margin-top: 150px;
+    }
+
+    .portfolio-tabs {
+        padding: 0 50px;
+    }
+
+    .form-contact {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: var(--gray);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-right: 50px;
+    }
+
+    .active-link {
+        color: var(--orange-light) !important;
+    }
+
+    .navigation a:last-child {
+        margin-right: 0;
+    }
+
+    .banner-right {
+        zoom: 2;
+    }
+
+    .banner-left {
+        zoom: 2;
+    }
+
+    .title-section h2 {
+        font-size: 40px;
+    }
+
+    .title-section div {
+        font-size: 25px;
+        margin: 30px 0 50px 0;
+        line-height: 35px;
+    }
+
+    .services-item {
+        zoom: 1.5;
+    }
+
+    .about-me-left {
+        zoom: 1.9;
+    }
+
+    .about-me-content {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    .about-me-right button {
+        zoom: 1.5;
+    }
+
+    .tool-card {
+        zoom: 2;
+    }
+
+    .list-tool-contain {
+        row-gap: 80px;
+    }
+
+    .tab {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-tabs {
+        margin-top: 50px;
+
+    }
+
+    .project-item {
+        zoom: 1.5;
+    }
+
+    .list-project {
+        height: fit-content;
+        margin-left: 50PX;
+    }
+
+    .form-contact input,
+    .form-contact select,
+    .form-contact textarea {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .contact-me-button-submit {
+        zoom: 1.5;
+    }
+
+    .logo-footer {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .list-link a {
+        font-size: 24px;
+    }
+
+    .social-item {
+        zoom: 1.3;
+    }
+
+    .contact-way-item span {
+        font-size: 24px;
+    }
+
+    .contact-way {
+        padding: 50px;
+    }
+
+    .contact-way-item img {
+        zoom: 1.4;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main-header {
+        padding: 0 80px;
+        margin-top: 57px;
+        margin-bottom: 30px;
+    }
+
+    .fixed {
+        padding: 30px 80px !important;
+    }
+
+    .container {
+        max-width: 1440px;
+        padding: 0 80px;
+    }
+
+    .logo {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+
+    .banner {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        height: 781px;
+        justify-content: space-between;
+    }
+
+    .banner-right {
+        zoom: 1;
+    }
+
+    .banner-left {
+        zoom: 1;
+    }
+
+    .list-social-link {
+
+        padding-top: 33px;
+    }
+
+    .list-social-desktop {
+        justify-content: flex-start !important;
+        margin-top: 33px;
+    }
+
+    .list-social-link div:first-child {
+        margin-left: 0;
+    }
+
+    .list-button {
+        text-align: left;
+    }
+
+    .introduce-name {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    .introduce-name strong {
+        font-size: 28px;
+        line-height: 33px;
+        font-family: 700;
+    }
+
+    .introduce-job {
+        font-size: 70px;
+        line-height: 84px;
+        font-weight: 900;
+    }
+
+    .info-job {
+        margin-left: 0;
+        margin-top: 80px;
+    }
+
+    .image-banner {
+        width: 520px;
+        height: 781px;
+    }
+
+    .banner-right {
+        zoom: 1;
+        height: 781px;
+        width: 618px;
+        border-bottom-left-radius: 300px;
+        border-bottom-right-radius: 300px;
+        overflow: hidden;
+        padding: 0;
+
+        margin: 0;
+    }
+
+    .background-circle {
+        width: 618px;
+        height: 618px;
+    }
+
+    /* Services */
+
+    .services {
+        margin-top: 150px;
+        padding: 0;
+    }
+
+    .title-section h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+
+    }
+
+    .title-section div {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 500;
+        margin-top: 18px;
+        margin-bottom: 0px;
+    }
+
+    .list-services {
+        grid-template-columns: auto auto auto;
+        gap: 40px;
+        margin-top: 80px;
+    }
+
+    .services-item {
+        zoom: 1;
+        padding: 30px 34px;
+    }
+
+    .services-item img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .services-item h3 {
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 700;
+    }
+
+    .services-item p {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 500;
+    }
+
+    .about-me {
+        margin-top: 150px;
+        padding: 0;
+    }
+
+    .about-me-container {
+        margin-top: 40px;
+    }
+
+    .introduce-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 808px;
+    }
+
+    .about-me-left {
+        zoom: 1;
+        height: fit-content;
+        margin-right: 101px;
+    }
+
+    .about-me-left img {
+        width: 566px;
+        height: 808px;
+        transform: translateX(0);
+    }
+
+    .background-rectangle {
+        width: 523px;
+        height: 676px;
+        bottom: 0;
+    }
+
+    .list-tool-contain {
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .tool-card {
+        zoom: 1;
+    }
+
+
+    circle {
+        --r: 65px;
+
+        r: var(--r);
+    }
+
+    .card svg {
+        width: 145px;
+        height: 145px;
+
+    }
+
+    .card svg circle {
+        transform: translate(28px, 28px);
+        stroke-width: 15px;
+    }
+
+    @keyframes changePercent {
+        from {
+            stroke-dashoffset: 0;
+        }
+
+        to {
+            stroke-dashoffset: calc(-1 * (408.2px - (408.2px * var(--percent) / 100)));
+        }
+    }
+
+    .card svg circle:last-of-type {
+        stroke-dasharray: 408.2px;
+
+        stroke-dashoffset: calc(-1 * (408.2px - (408.2px * var(--percent) / 100)));
+    }
+
+
+    .info-tool h3 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .info-tool p {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+
+    .tab {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        padding: 14px 40px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+
+    .portfolio-tabs .tab:nth-child(5) {
+        display: none;
+    }
+
+    .list-project {
+        margin-top: 70px;
+        margin-left: 0;
+    }
+
+    .list-project-container {
+        display: grid;
+        gap: 17px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .project-item {
+        zoom: 1;
+        height: fit-content;
+    }
+
+    .project-item img {
+        width: 415px;
+        height: 415px;
+    }
+
+    .project-info {
+        height: 58px;
+        align-items: center;
+    }
+
+    .project-info span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+
+
+    }
+
+    .contact-me {
+        margin-top: 150px;
+    }
+
+    .title-section br {
+        display: none;
+    }
+
+    .form-contact {
+        padding: 0 134px;
+    }
+
+    .form-contact form {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: auto auto;
+    }
+
+    .form-input input,
+    .form-input textarea,
+    .form-input select {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 500;
+    }
+
+    form .form-input:nth-child(5) {
+        height: fit-content;
+    }
+
+    .form-input {
+        width: 491px;
+        margin: 0;
+    }
+
+    form textarea {
+        height: 162px;
+    }
+
+    .button-contact-me {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .button-contact-me button {
+        margin: 30px 0 0 0;
+    }
+
+    .logo-footer {
+        font-size: 30px;
+        line-height: 39px;
+        font-weight: 700;
+    }
+
+    .list-link {
+        padding: 50px 0;
+    }
+
+    .list-link a {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-left: 60px;
+        margin-right: 0;
+    }
+
+    .list-link a:first-child {
+        margin-left: 0;
+    }
+
+    .list-social-link {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .contact-way {
+        display: flex;
+        justify-content: center;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-way-item {
+        margin: 0 20px 0 20px;
+    }
+
+    .contact-way-item span {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    .contact-way div:first-child {
+        margin-bottom: 0;
+    }
+
+    .footer {
+        margin-top: 150px;
+    }
+
+    .separate-footer {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        background-color: var(--gray-dark);
+        color: var(--gray-dark);
+        border: none;
+        height: 1px;
+        margin-bottom: 34px;
+    }
+
+    .text-in-desktop {
+        display: inline;
+    }
+
+    .lis-tool-design {
+        margin-top: 100px;
+    }
+
+    .about-me-content {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 38px;
+    }
+
+    .about-me-right button {
+        margin: 40px 0 0 0;
+        zoom: 1;
+    }
+
+    .about-me-right button {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        padding: 12px 30px;
+    }
+}
