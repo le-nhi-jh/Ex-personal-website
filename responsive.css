@@ -203,8 +203,13 @@
         margin-bottom: 30px;
     }
 
+
     .fixed {
         padding: 30px 80px !important;
+    }
+
+    .btn {
+        padding: 12px 40px;
     }
 
     .container {

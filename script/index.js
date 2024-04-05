@@ -1,7 +1,12 @@
 const mainFunc = () => {
+  const menuLink = document.querySelector(".menu-link");
+  const menuButton = document.querySelector(".menu-button");
+  const buttonBackToTop = document.getElementById("button-back-to-top");
+
   window.addEventListener("scroll", function () {
     handleFixHeader();
     addAnimationForProgressBar();
+    handleBackToTop();
   });
   const handleFixHeader = () => {
     const header = document.getElementById("header");
@@ -24,11 +29,21 @@ const mainFunc = () => {
       });
     }
   };
-  const menuLink = document.querySelector(".menu-link");
-  const menuButton = document.querySelector(".menu-button");
+  const handleBackToTop = () => {
+    if (window.scrollY > 300) {
+      buttonBackToTop.classList.add("show");
+    } else {
+      buttonBackToTop.classList.remove("show");
+    }
+  };
 
   menuButton.addEventListener("click", () => {
     menuLink.classList.toggle("open-menu");
+  });
+
+  buttonBackToTop.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 };
 
