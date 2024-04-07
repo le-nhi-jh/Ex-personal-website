@@ -8,6 +8,7 @@
 
 body {
     background: var(--black);
+    letter-spacing: 0.03em;
 }
 
 :root {
@@ -20,7 +21,6 @@ body {
     --white: #fff;
     --gray: #959595;
     --gray-dark: #707070;
-
     --gray-darker: #575757;
 }
 
@@ -47,7 +47,7 @@ body {
 
 .fixed.shadow {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    /* Thay đổi box shadow khi header cố định */
+
 }
 
 .menu-icon img {
@@ -66,7 +66,8 @@ body {
 }
 
 .btn {
-    padding: 8px 16px;
+    width: 85px;
+    height: 33px;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -193,7 +194,8 @@ body {
 }
 
 .button-hire-me {
-    padding: 8px 20px;
+    width: 93px;
+    height: 33px;
     background: linear-gradient(90deg, var(--orange-light), var(--orange-dark));
     border-radius: 8px;
     font-size: 14px;
@@ -218,7 +220,8 @@ body {
     line-height: 17px;
     font-weight: 500;
     color: var(--gray);
-    padding: 8px 20px;
+    width: 130px;
+    height: 33px;
     cursor: pointer;
     background-color: transparent;
 }
@@ -249,6 +252,7 @@ body {
 
 .info-job-item span {
     display: block;
+    letter-spacing: 0;
     color: #DFDFDF;
 }
 
@@ -374,9 +378,11 @@ body {
 
 .about-me-left {
     position: relative;
+    margin-top: 70px;
     height: 565px;
     margin-bottom: 34px;
 }
+
 
 .background-rectangle {
     position: absolute;
@@ -393,8 +399,9 @@ body {
 }
 
 .about-me-left img {
-    width: 394px;
-    height: 565px;
+    width: 395.7px;
+    height: 564.88px;
+
     display: block;
     margin: 0 auto;
     filter: grayscale(100%);
@@ -404,10 +411,12 @@ body {
 .about-me-right button {
     margin: 0 auto;
     display: block;
-    padding: 10px 24px;
+    width: 186px;
+    height: 40px;
     border: none;
     border-radius: 8px;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 16px;
     font-weight: 700;
@@ -677,12 +686,14 @@ body {
 }
 
 .contact-me-button-submit {
-    padding: 8px 24px;
+
     border: 2px solid var(--gray);
     border-radius: 8px;
     background-color: transparent;
     color: var(--gray);
     font-size: 16px;
+    width: 85px;
+    height: 35px;
     line-height: 19px;
     font-weight: 700;
     display: block;
@@ -711,8 +722,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.social-link-footer {
+    padding-top: 0;
+}
+
 .list-link {
-    padding: 30px 33px 30px 33px;
+    padding: 30px 0px 30px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -735,6 +750,7 @@ body {
 
 .list-link a:nth-child(5) {
     margin-bottom: 0;
+    margin-right: 0;
 }
 
 .contact-way div:first-child {
@@ -832,36 +848,4 @@ body {
 #button-back-to-top.show {
     opacity: 1;
     visibility: visible;
-}
-
-/* Styles for the content section */
-
-.content {
-    width: 77%;
-    margin: 50px auto;
-    font-family: 'Merriweather', serif;
-    font-size: 17px;
-    color: #6c767a;
-    line-height: 1.9;
-}
-
-@media (min-width: 500px) {
-    .content {
-        width: 43%;
-    }
-
-    #button-back-to-top {
-        margin: 30px;
-    }
-}
-
-.content h1 {
-    margin-bottom: -10px;
-    color: #03a9f4;
-    line-height: 1.5;
-}
-
-.content h3 {
-    font-style: italic;
-    color: #96a2a7;
 }

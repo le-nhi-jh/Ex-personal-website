@@ -13,13 +13,13 @@
 
 @media only screen and (min-width: 768px) {
     .main-header {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 30px 50px;
     }
 
     .container {
         max-width: 768px;
         margin: 0 auto;
+
     }
 
     .info-job {
@@ -37,6 +37,7 @@
 
     .banner-left {
         zoom: 1.3;
+        padding-top: 60px;
     }
 
     .services {
@@ -66,9 +67,13 @@
 
 @media only screen and (min-width: 1024px) {
 
+    body {
+        letter-spacing: 0.03em;
+    }
 
     .container {
         max-width: 1024px;
+
     }
 
     .menu-icon {
@@ -209,7 +214,12 @@
     }
 
     .btn {
-        padding: 12px 40px;
+        width: 141px;
+        height: 43px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+
     }
 
     .container {
@@ -233,11 +243,15 @@
 
     .banner-right {
         zoom: 1;
+        animation: moveRightToLeft .5s ease;
     }
 
     .banner-left {
         zoom: 1;
+        animation: moveLeftToRight .5s ease;
     }
+
+
 
     .list-social-link {
 
@@ -258,14 +272,16 @@
     }
 
     .button-hire-me {
-        padding: 12px 40px;
+        width: 156px;
+        height: 48px;
         font-size: 20px;
         line-height: 24px;
         font-weight: 700;
     }
 
     .button-downloadd-CV {
-        padding: 12px 40px;
+        width: 209px;
+        height: 48px;
         font-size: 20px;
         line-height: 24px;
         font-weight: 700;
@@ -294,6 +310,20 @@
     .info-job {
         margin-left: 0;
         margin-top: 80px;
+    }
+
+    .info-job-item strong {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+    }
+
+    .info-job-item span {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
     }
 
     .info-job .info-job-item:nth-child(1),
@@ -354,18 +384,23 @@
 
     .services-item {
         zoom: 1;
-        padding: 30px 34px;
+        padding: 34px 30px;
+        animation: scaleAnimation .5s ease-in;
     }
+
+
 
     .services-item img {
         width: 58px;
-        height: 58px;
+        height: 55px;
     }
 
     .services-item h3 {
         font-size: 24px;
         line-height: 38px;
         font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 34px;
     }
 
     .services-item p {
@@ -402,6 +437,16 @@
         transform: translateX(0);
     }
 
+    .tool-logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-figma img {
+        width: 36px;
+        height: 52px;
+    }
+
     .background-rectangle {
         width: 523px;
         height: 676px;
@@ -434,15 +479,6 @@
         stroke-width: 15px;
     }
 
-    @keyframes changePercent {
-        from {
-            stroke-dashoffset: 0;
-        }
-
-        to {
-            stroke-dashoffset: calc(-1 * (408.2px - (408.2px * var(--percent) / 100)));
-        }
-    }
 
     .card svg circle:last-of-type {
         stroke-dasharray: 408.2px;
@@ -515,6 +551,15 @@
         margin-top: 150px;
     }
 
+    .contact-me-button-submit {
+        zoom: 1;
+        width: 127px;
+        height: 48px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
     .title-section br {
         display: none;
     }
@@ -541,14 +586,16 @@
         height: fit-content;
     }
 
+    form .form-input:nth-child(6) {
+        height: 162px;
+    }
+
     .form-input {
         width: 491px;
         margin: 0;
     }
 
-    form textarea {
-        height: 162px;
-    }
+
 
     .button-contact-me {
         display: flex;
@@ -595,6 +642,17 @@
 
     .contact-way-item {
         margin: 0 20px 0 20px;
+    }
+
+    .contact-way-item img {
+        zoom: 1;
+        width: 24px;
+        height: 24px;
+    }
+
+    .social-item img {
+        width: 24px;
+        height: 24px;
     }
 
     .contact-way-item span {
@@ -645,6 +703,51 @@
         font-size: 20px;
         line-height: 24px;
         font-weight: 700;
-        padding: 12px 30px;
+        width: 224px;
+        height: 48px;
+    }
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1s);
+    }
+}
+
+@keyframes changePercent {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: calc(-1 * (408.2px - (408.2px * var(--percent) / 100)));
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
